@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: repeat(4, 4fr);
+            grid-template-rows: repeat(4, 100px);
+        }
+
+        .inner {
+            border: 3px solid rgb(229, 255, 0);
+            text-align: center;
+        }
+
+        .header {
+            grid-column: 1/5;
+        }
+
+        .leftside {
+            grid-column: 1;
+            grid-row: 2/4;
+        }
+
+
+        .content1 {
+            grid-column: 2/4;
+            grid-row: 2;
+        }
+
+        .content2 {
+            grid-column: 2/4;
+            grid-row: 3;
+        }
+
+        .rightside {
+            grid-row: 2/4;
+        }
+
+        .footer {
+            grid-column: 1/5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner header">header</div>
+        <div class="inner leftside">Left-Side</div>
+        <div class="inner content1">content-1</div>
+        <div class="inner content2">content-2</div>
+        <div class="inner rightside"> Rigth-Side</div>
+        <div class="inner footer">footer</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* external style */
+h3 {
+    background-color: black;
+    /* The !important rule overrides ALL styling rules for that specific property on that element! */
+    color: aqua !important;
+}
+
+p {
+    background-color: rgb(0, 128, 119);
+    color: rgb(85, 255, 0);
+}
+
+img {
+    border: 2px solid red;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors-2</title>
+    <style>
+        /* universal tag:  */
+        * {
+            color: olivedrab;
+        }
+
+        /* decendet seletor (space): div p ==>selects all tags which are insdie the div (at any level) */
+        div p {
+            color: chartreuse;
+        }
+
+        /* child seclector: select the immediate childern. div>p will select all the p tags which are immedate childern of div */
+        div>p {
+            background-color: blue;
+        }
+
+        /* next sibling selector (+) it selects the p tag which come immedately after the div  */
+        div+p {
+            color: aqua;
+        }
+
+        /* subsequent sibling selector (~) : it select  all the p siblings that come after the div  */
+        div~p {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <figcaption>HTML TREE STURCTURE</figcaption>
+        <img src="Screenshot 2025-10-01 at 12.13.32 PM.png" alt="" srcset="">
+    </figure>
+    <h2>
+        combinators
+    </h2>
+    <div>
+        <p>first para</p>
+        <p>second para</p>
+        <span>
+            <p>para isnside the span</p>
+        </span>
+    </div>
+    <!-- <h4>Lorem ipsum dolor sit amet.</h4> -->
+    <p>para after div</p>
+    <p>last para after div</p>
+
+</body>
+
+</html>
