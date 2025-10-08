@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Properties</title>
+    <style>
+        /* Width
+        absolute - px 
+        relative
+        %
+        1vw - 1% of viewport width
+        font-size
+        em = 16px default 
+        rem - rem is the root element */
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid rebeccapurple;
+            margin: 100px 100px;
+            /* box-shadow: 10px 0px gray; */
+            /* box-shadow: x-offset y-offset blur spread color */
+            box-shadow: 20px 20px 20px 30px rgb(136, 17, 17);
+            text-align: center;
+            font-size: 80px;
+            text-shadow: 5px 5px 5px rgb(0, 255, 149);
+
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-left: 100px;
+            /* text-shadow: x-offset y-offset blur color */
+            text-shadow: 5px 5px 5px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div>box</div>
+    <h1>
+        Header
+    </h1>
+</body>
+
+</html>

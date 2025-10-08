@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Img</title>
     <style>
-        @media (min-width>=700px) and (max-width<=700px) {
-            body{
-                background-image: url(Screenshot\ 2025-10-01\ at\ 12.13.32\ PM.png);
-            }
-        }
     </style>
 </head>
 <body>   
+    <picture>
+        <source media="(max-width:600px)" srcset="/html/images.jpeg">
+        <img src="Screenshot 2025-10-01 at 12.13.32 PM.png" alt="">
+    </picture>
 </body>
 </html>

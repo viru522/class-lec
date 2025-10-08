@@ -8,11 +8,15 @@
         div{
             /* height: 400px; */
             /* width: 250px; */
-            width: 25%;
+             width: 25%; /* width is only for the content */
+            /* screen width = 1000px, div width=250px width is of content border is additional 254px box =4px border width  */
+
             border: 2px solid orange;
             /* display: inline-block; */
             float: left;
-            box-sizing: border-box;
+            box-sizing: border-box;  /* it includes border inside the width 250px box = 4px borber width +246px content
+            254px including left and right border */
+
         }
         img{
             width: 100%;
@@ -40,12 +44,12 @@
                 background-image: url(Screenshot\ 2025-10-01\ at\ 12.13.32\ PM.png);
             }
         } */
-         @media(max-width:350px){
+         @media(max-width:400px){
             .small{
                 width: 100%;
             }
          }
-         @media (min-width:400px) and (max-width: 700px) {
+         @media (min-width:401px) and (max-width: 700px) {
             .medium{
                 width: 50%;
                 border-color: brown;
